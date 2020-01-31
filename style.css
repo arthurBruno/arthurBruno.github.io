@@ -1,0 +1,50 @@
+body{
+	max-width: 1000px;
+	margin: auto;
+	color: #FFF;
+	font-family: 'Roboto Condensed'	, sans-serif;
+}
+
+header{
+  	display: grid;
+  	grid-template-columns: 250px auto 250px;
+}
+
+.card{
+	padding: 50px 50px;
+  	background-color: #0047ab;
+  	align-items: center;
+  	box-shadow: 0px 0px 10px #666;
+  	border-radius: 5px;
+  	margin-bottom: 20px;
+}
+
+.grid-container{
+	display: grid;
+	grid-template-columns: 200px auto;
+}
+
+.grid-container h1{
+	text-align: right;
+	padding-right: 20px;
+}
+
+.grid-container p{
+	padding-left: 20px;
+	border-left: 1px solid #FFF;
+}
+
+header img{
+	width: 200px; 
+	border-radius: 50%;
+}
+
+header a{
+	text-decoration: none;
+	color: #FFF;
+}
+
+.info-basicas{
+	text-align: right;
+	font-size: 1.3rem;
+}
