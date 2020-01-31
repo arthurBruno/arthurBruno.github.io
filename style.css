@@ -1,4 +1,6 @@
 body{
+	padding: 10px;
+	background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRQpvbuf8ivDD4k6YlYqIKslnTKKkk5ptLgBI5J5RuxLqoo13AX");
 	max-width: 1000px;
 	margin: auto;
 	color: #FFF;
@@ -16,12 +18,12 @@ header{
   	align-items: center;
   	box-shadow: 0px 0px 10px #666;
   	border-radius: 5px;
-  	margin-bottom: 20px;
 }
 
 .grid-container{
 	display: grid;
 	grid-template-columns: 200px auto;
+	margin-top: 20px;
 }
 
 .grid-container h1{
@@ -35,8 +37,10 @@ header{
 }
 
 header img{
+	transition: 0.2s;
 	width: 200px; 
 	border-radius: 50%;
+	cursor: pointer;
 }
 
 header a{
@@ -47,4 +51,48 @@ header a{
 .info-basicas{
 	text-align: right;
 	font-size: 1.3rem;
+}
+
+
+
+header img:hover{
+	transition: 0.2s;
+	width: 205px; 
+	box-shadow: 0px 0px 20px #FFF;
+}
+
+
+
+@media screen and (max-width: 800px){
+	.grid-container{
+		grid-template-columns: auto;
+	}
+
+	header{
+		background-color: red;
+		display: grid;
+	  	grid-template-columns: auto;
+	  	justify-content: center;
+	  	text-align: center;
+	}
+
+	header div{
+		padding-top: 10px;
+	}
+
+	.info-basicas{
+		text-align: center;
+	}
+
+	.grid-container h1{
+		padding: 0px 0px 20px 0px;
+		text-align: center;
+	}
+
+	.grid-container p{
+		padding: 20px 0px 0px 0px;
+		border: 0px solid #FFF;
+		border-top: 1px solid #FFF;
+		font-size: 1.2rem;
+	}
 }
